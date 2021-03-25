@@ -1,8 +1,10 @@
 <template>
-    <div></div>
+  <v-container>
+    
+  </v-container>
 </template>
 <script>
 export default {
-    layout: 'admin'
+  layout: 'admin'
 }
 </script>
