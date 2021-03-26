@@ -61,6 +61,7 @@ export default {
           },
         });
         console.log(res);
+        this.$router.push('/admin/home')
       } catch (err) {
         console.log(err);
       }

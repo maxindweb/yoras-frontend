@@ -46,11 +46,17 @@ export default {
   },
 
   auth: {
+    localStorage: false,
     strategies: {
       local: {
         token: {
-          required: true,
+          cookie:true,
+          // required: true,
           type: 'Bearer'
+        },
+        user: {
+          property: 'user',
+          autoFetch: true
         },
         endpoints: {
           login: { url: '/auth/login', method: 'post', propertyName: 'token' },
